@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu Review — Pola Kalimat Minna no Nihongo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="petal-field" id="petal-field" aria-hidden="true"></div>
+  <div class="wrap">
+
+    <header class="top">
+      <svg class="sakura-branch" viewBox="0 0 108 92" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M104 4 C 86 10, 70 14, 56 28 C 46 38, 40 50, 34 64" fill="none" stroke="#8C6B4F" stroke-width="2"
+          stroke-linecap="round" />
+        <path d="M56 28 C 50 24, 44 20, 40 14" fill="none" stroke="#8C6B4F" stroke-width="1.6" stroke-linecap="round" />
+        <g fill="#F3AFC0">
+          <circle cx="78" cy="10" r="6" />
+          <circle cx="88" cy="6" r="6" />
+          <circle cx="70" cy="6" r="5.5" />
+          <circle cx="58" cy="24" r="5.5" />
+          <circle cx="48" cy="16" r="5" />
+          <circle cx="38" cy="12" r="4.5" />
+          <circle cx="30" cy="60" r="5" />
+          <circle cx="22" cy="52" r="4.5" />
+        </g>
+        <g fill="#D9647E">
+          <circle cx="78" cy="10" r="1.6" />
+          <circle cx="88" cy="6" r="1.6" />
+          <circle cx="58" cy="24" r="1.4" />
+          <circle cx="30" cy="60" r="1.4" />
+        </g>
+      </svg>
+      <div>
+        <div class="eyebrow">Minna no Nihongo · Bab 1–25</div>
+        <h1>Kartu Review Pola Kalimat</h1>
+      </div>
+      <div class="stamp">確認済</div>
+    </header>
+
+    <div class="stat-strip">
+      <div class="hanko-stamp" id="hanko-level">見</div>
+      <div class="stat-mid">
+        <div class="level-name" id="level-name">見習い</div>
+        <div class="level-sub" id="level-sub">Pemula</div>
+        <div class="xp-bar-track">
+          <div class="xp-bar-fill" id="xp-bar-fill" style="width:0%"></div>
+        </div>
+        <div class="xp-label" id="xp-label">0 XP</div>
+      </div>
+      <div class="streak-box">
+        <div class="n" id="streak-n">0</div>
+        <div class="l">🔥 hari beruntun</div>
+      </div>
+    </div>
+
+    <nav class="tabs">
+      <button id="tab-kelola" class="active">Kelola Kartu</button>
+      <button id="tab-review">Mode Review</button>
+      <button id="tab-progres">Progres</button>
+    </nav>
+
+    <section id="sec-kelola" class="active">
+      <div class="add-form">
+        <div class="row">
+          <div style="flex: 0 0 90px;">
+            <label for="f-bab">Bab</label>
+            <input type="number" id="f-bab" min="1" max="50" placeholder="17">
+          </div>
+          <div>
+            <label for="f-pola">Pola kalimat</label>
+            <input type="text" id="f-pola" placeholder="[Kata Kerja]-nai de kudasai">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="f-contoh">Contoh kalimat</label>
+            <textarea id="f-contoh" placeholder="写真を 撮らないで ください。"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="f-contoh-romaji">Romaji contoh</label>
+            <input type="text" id="f-contoh-romaji" placeholder="shashin o toranaide kudasai.">
+          </div>
+          <div>
+            <label for="f-contoh-arti">Arti contoh (Indonesia)</label>
+            <input type="text" id="f-contoh-arti" placeholder="Tolong jangan mengambil foto.">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="f-arti">Arti / fungsi pola</label>
+            <textarea id="f-arti" placeholder="Tolong jangan (larangan halus)"></textarea>
+          </div>
+        </div>
+        <button class="primary" id="btn-add">Tambah Kartu</button>
+      </div>
+
+      <div class="legend-note">Keterangan singkatan pada kolom arti: <b>KB</b> = Kata Benda, <b>KK</b> = Kata Kerja
+        (mengikuti label [Kata Benda]/[Kata Kerja] pada pola kalimat, cth. KB1/KB2 = Kata Benda 1/2).</div>
+
+      <div id="list-container">
+        <div class="loading">Memuat kartu…</div>
+      </div>
+    </section>
+
+    <section id="sec-review">
+      <div class="review-setup">
+        <label>Pilih bab yang mau direview</label>
+        <div class="bab-checks" id="bab-checks"></div>
+        <div class="focus-row">
+          <input type="checkbox" id="chk-focus">
+          <label for="chk-focus"
+            style="margin:0; text-transform:none; font-family:inherit; font-size:13.5px; letter-spacing:0; color:var(--ink);">Fokus
+            kartu yang belum lancar saja</label>
+        </div>
+        <button class="primary" id="btn-start-review">Mulai Review</button>
+      </div>
+      <div id="review-area"></div>
+    </section>
+
+    <section id="sec-progres">
+      <div class="progres-grid" id="progres-grid"></div>
+      <div class="bab-progress-list" id="bab-progress-list"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
