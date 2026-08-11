@@ -52,72 +52,115 @@
     [3, 'お国 は どちらですか', 'お国は どちらですか。', '8. Awalan Kesopanan o- pada Negara Lawan Bicara', 'o-kuni wa dochira desu ka.', 'Berasal dari negara manakah Anda?'],
 
     // BAB 4
-    [4, '今 〜時 〜分です', '今 4時 5分です。', 'Sekarang jam ~ menit ~', 'ima yo-ji go-fun desu.', 'Sekarang jam 4 lewat 5 menit.'],
-    [4, '[Kata Kerja]-masu / [Kata Kerja]-masen / [Kata Kerja]-mashita', '起きる → 起きます／起きません／起きましました', 'Bentuk kata kerja (rutinitas/lampau)', 'okiru → okimasu / okimasen / okimashimashita', 'Bangun → Bangun / Tidak bangun / Sudah bangun'],
-    [4, '[Waktu] に [Kata Kerja]', '毎朝 6時に 起きます。', 'Partikel に untuk penunjuk waktu spesifik', 'maiasa roku-ji ni okimasu.', 'Setiap pagi bangun jam 6.'],
-    [4, '[Kata Benda 1] kara [Kata Benda 2] made', '9時から 5時まで 働きます。', 'Dari KB1 sampai KB2', 'ku-ji kara go-ji made hatarakimasu.', 'Bekerja dari jam 9 sampai jam 5.'],
+    [4, '今 〜時 〜分です', '今 4時 5分です。', '1. Menyebutkan Jam dan Menit', 'ima yo-ji go-fun desu.'],
+    [4, '[Kata Kerja]-masu / [Kata Kerja]-masen', '毎朝 6時に 起きます。 / 起きません。', '2. KK Bentuk Non-Lampau (Rutin/Masa Depan)', 'okimasu / okimasen.'],
+    [4, '[Kata Kerja]-mashita / [Kata Kerja]-masen deshita', 'きのう 勉強しました。 / 勉強しませんでした。', '3. KK Bentuk Lampau (Sudah/Belum terjadi)', 'benkyou shimashita / benkyou shimasen deshita.'],
+    [4, '[Waktu Spesifik] に [Kata Kerja]', '6時に 起きます。', '4. Partikel に untuk penunjuk waktu spesifik', 'roku-ji ni okimasu.'],
+    [4, '[Waktu 1] kara [Waktu 2] made', '9時から 5時まで 働きます。', '5. Dari (kara) sampai (made)', 'ku-ji kara go-ji made hatarakimasu.'],
+    [4, '[Kata Benda 1] と [Kata Benda 2]', '土曜日と 日曜日', '6. Partikel と (Dan - Menghubungkan KB)', 'doyoubi to nichiyoubi.'],
+    [4, '[Kalimat] ね', '大変ですね。', '7. Partikel ね (Kan / Ya - Meminta persetujuan)', 'taihen desu ne.'],
 
     // BAB 5
-    [5, '[Tempat] へ 行きます／来ます／帰ります', '京都へ 行きます。', 'Pergi / datang / pulang ke (tempat)', 'Kyouto e ikimasu.', 'Saya pergi ke Kyoto.'],
-    [5, '[Kendaraan] で 行きます', '電車で 行きます。', 'Pergi dengan (kendaraan)', 'densha de ikimasu.', 'Saya pergi naik kereta.'],
-    [5, '[Orang] と [Kata Kerja]', '友達と 日本へ 来ました。', 'Melakukan kegiatan bersama (orang)', 'tomodachi to Nihon e kimashita.', 'Saya datang ke Jepang bersama teman.'],
+    [5, '[Tempat] へ 行きます／来ます／帰ります', '京都へ 行きます。', '1. Arah pergerakan (Pergi/Datang/Pulang ke tempat)', 'Kyouto e ikimasu.'],
+    [5, 'どこ [へ] も 行きません／行きませんでした', 'どこも 行きませんでした。', '2. Negatif total (Tidak pergi ke mana pun)', 'doko mo ikimasen deshita.'],
+    [5, '[Kendaraan] で 行きます', '電車で 行きます。', '3. Alat transportasi (Pergi naik/menggunakan)', 'densha de ikimasu.'],
+    [5, '歩いて 行きます／帰ります', '駅から 歩いて 帰ります。', '4. Berjalan kaki (Tanpa partikel de)', 'eki kara aruite kaerimasu.'],
+    [5, '[Orang] と [Kata Kerja]', '友達と 日本へ 来ました。', '5. Bersama dengan (orang/hewan)', 'tomodachi to Nihon e kimashita.'],
+    [5, 'いつ [Kata Kerja] か', 'いつ 日本へ 来ましたか。', '6. Menanyakan waktu (Kapan - tanpa partikel ni)', 'itsu Nihon e kimashita ka.'],
+    [5, '[Kalimat] よ', 'この 電車は 甲子園へ 行きますよ。', '7. Partikel よ (Memberi tahu informasi baru/lho)', 'kono densha wa Koushien e ikimasu yo.'],
 
     // BAB 6
-    [6, '[Kata Benda] を [Kata Kerja]', 'パンを 食べます。', 'Melakukan aksi KK pada objek KB', 'pan o tabemasu.', 'Saya makan roti.'],
-    [6, '[Tempat] で [Kata Kerja]', 'レストランで ごはんを 食べます。', 'Melakukan aktivitas KK di (tempat)', 'resutoran de gohan o tabemasu.', 'Saya makan nasi di restoran.'],
-    [6, '[Kata Kerja]-masen ka', 'いっしょに 行きませんか。', 'Ajakan: "Mau kah...?" / "Bagaimana kalau...?"', 'issho ni ikimasen ka.', 'Maukah pergi bersama?'],
-    [6, '[Kata Kerja]-mashou', 'ちょっと 休みましょう。', 'Ajakan tegas: "Mari kita..."', 'chotto yasumimashou.', 'Mari kita istirahat sebentar.'],
+    [6, '[Kata Benda] を [Kata Kerja]', 'パンを 食べます。', '1. Objek kata kerja (Partikel を / o)', 'pan o tabemasu.'],
+    [6, '[Kata Benda] を します', 'サッカーを します。 / 宿題を します。', '2. Melakukan kegiatan/olahraga/pekerjaan', 'sakkaa o shimasu / shukudai o shimasu.'],
+    [6, '何を しますか', '月曜日 何を しますか。', '3. Menanyakan aktivitas (Melakukan apa?)', 'getsuyoubi nani o shimasu ka.'],
+    [6, '[Tempat] で [Kata Kerja]', 'レストランで ごはんを 食べます。', '4. Tempat berlangsungnya aktivitas (Partikel で)', 'resutoran de gohan o tabemasu.'],
+    [6, '[Kata Kerja]-masen ka', 'いっしょに 行きませんか。', '5. Ajakan halus: "Mau kah...?" / "Bagaimana kalau...?"', 'issho ni ikimasen ka.'],
+    [6, '[Kata Kerja]-mashou', 'ちょっと 休みましょう。', '6. Ajakan tegas / respon ajakan: "Mari kita..."', 'chotto yasumimashou.'],
 
     // BAB 7
-    [7, '[Alat] / [Bahasa] で [Kata Kerja]', 'はしで 食べます。 / 日本語で 話します。', 'Melakukan KK dengan/menggunakan (alat/bahasa)', 'hashi de tabemasu. / nihongo de hanashimasu.', 'Makan menggunakan sumpit. / Berbicara dalam bahasa Jepang.'],
-    [7, '[Orang] に [Kata Benda] を あげます', '木村さんに 花を あげました。', 'Memberikan KB kepada (orang)', 'Kimura-san ni hana o agemashita.', 'Saya memberikan bunga kepada Sdr. Kimura.'],
-    [7, '[Orang] に [Kata Benda] を もらいます', '山田さんに 本を もらいました。', 'Menerima KB dari (orang)', 'Yamada-san ni hon o moraimashita.', 'Saya menerima buku dari Sdr. Yamada.'],
-    [7, 'もう [Kata Kerja]-mashita', 'もう 昼ごはんを 食べました。', 'Sudah melakukan KK', 'mou hirugohan o tabemashita.', 'Saya sudah makan siang.'],
+    [7, '[Alat / Bahasa] で [Kata Kerja]', 'はしで 食べます。 / 日本語で 話します。', '1. Menggunakan alat / sarana / bahasa (Partikel で)', 'hashi de tabemasu. / nihongo de hanashimasu.'],
+    [7, '「[Kata]」は [Bahasa] で 何ですか', '「Arigatou」は 英語で 何ですか。', '2. Menanyakan padanan kata dalam bahasa lain', '"Arigatou" wa Eigo de nan desu ka.'],
+    [7, '[Orang] に [Kata Benda] を あげます', '木村さんに 花を あげました。', '3. Memberikan barang kepada seseorang (ni agemasu)', 'Kimura-san ni hana o agemashita.'],
+    [7, '[Orang] に／から [Kata Benda] を もらいます', '山田さんに 本を もらいました。', '4. Menerima barang dari seseorang (ni/kara moraimasu)', 'Yamada-san ni hon o moraimashita.'],
+    [7, 'もう [Kata Kerja]-mashita', 'もう 昼ごはんを 食べました。', '5. Sudah melakukan kegiatan (mou + bentuk lampau)', 'mou hirugohan o tabemashita.'],
+    [7, 'いいえ、まだです', '「もう 送りましたか。」「いいえ、まだです。」', '6. Belum melakukan (Respon untuk pertanyaan mou)', '"mou okurimashita ka." "iie, mada desu."'],
 
     // BAB 8
-    [8, '[Kata Benda] は [Kata Sifat] (i/na) desu', '富士山は 高いです。 / ワット先生は 親切です。', 'KB itu (kata sifat)', 'Fujisan wa takai desu. / Watto-sensei wa shinsetsu desu.', 'Gunung Fuji tinggi. / Pak Watt ramah.'],
-    [8, '[Kata Sifat-i] + [Kata Benda] / [Kata Sifat-na] + na + [Kata Benda]', '高い 山 / きれいな 部屋', 'Kata sifat yang menerangkan kata benda', 'takai yama / kirei na heya', 'Gunung yang tinggi / Kamar yang bersih'],
-    [8, 'あまり + Negatif', 'この 本は あまり 面白くないです。', 'Tidak begitu / tidak terlalu...', 'kono hon wa amari omoshirokunai desu.', 'Buku ini tidak begitu menarik.'],
+    [8, '[Kata Benda] は [KS-i] です／〜くないです', '富士山は 高いです。 / 面白くないです。', '1. Predikat Kata Sifat-i (Positif & Negatif)', 'Fujisan wa takai desu. / omoshirokunai desu.'],
+    [8, '[Kata Benda] は [KS-na] です／〜じゃ ありません', 'ワット先生は 親切です。 / 静かじゃ ありません。', '2. Predikat Kata Sifat-na (Positif & Negatif)', 'Watto-sensei wa shinsetsu desu. / shizuka ja arimasen.'],
+    [8, '[KS-i] [KB] / [KS-na] な [KB]', '高い 山 / きれいな 部屋', '3. Kata Sifat menerangkan Kata Benda', 'takai yama / kirei na heya'],
+    [8, 'とても [+] / あまり [-]', 'とても 寒いです。 / あまり 寒くないです。', '4. Tingkat derajat (Sangat / Tidak begitu)', 'totemo samui desu. / amari samukunai desu.'],
+    [8, '[Kata Benda] は どうですか', '日本の 生活は どうですか。', '5. Menanyakan kesan / kondisi (Bagaimana...?)', 'Nihon no seikatsu wa dou desu ka.'],
+    [8, '[KB 1] は どんな [KB 2] ですか', '奈良は どんな 町ですか。', '6. Menanyakan ciri/sifat (Benda yang bagaimana?)', 'Nara wa donna machi desu ka.'],
+    [8, '[Kalimat 1] が、[Kalimat 2]', '日本の 食べ物は 美味しいですが、高いです。', '7. Pertentangan (Tetapi / Namun)', 'Nihon no tabemono wa oishii desu ga, takai desu.'],
 
     // BAB 9
-    [9, '[Kata Benda] が すき / きらい / じょうず / へた です', 'わたしは イタリア料理が 好きです。', 'Suka / benci / pandai / mahir KB (partikel が)', 'watashi wa Itaria ryouri ga suki desu.', 'Saya suka masakan Italia.'],
-    [9, '[Kata Benda] が あります / わかります', '日本語が わかります。', 'Punya / mengerti KB', 'nihongo ga wakarimasu.', 'Saya mengerti bahasa Jepang.'],
-    [9, '[Alasan] から、[Kalimat]', '時間が ありませんから、タクシーで 行きます。', 'Karena (alasan), maka...', 'jikan ga arimasen kara, takushii de ikimasu.', 'Karena tidak ada waktu, saya naik taksi.'],
+    [9, '[KB] が すき／きらい／じょうず／へた です', 'わたしは イタリア料理が 好きです。', '1. Suka / Benci / Pandai / Mahir (Partikel が)', 'watashi wa Itaria ryouri ga suki desu.'],
+    [9, '[KB] が あります／わかります', '日本語が わかります。 / 車が あります。', '2. Memiliki / Mengerti (Partikel が)', 'nihongo ga wakarimasu. / kuruma ga arimasu.'],
+    [9, 'よく／だいたい／すこし／あまり／ぜんぜん', '英語が よく わかります。 / ぜんぜん わかりません。', '3. Tingkat pemahaman / kuantitas', 'Eigo ga yoku wakarimasu. / zenzen wakarimasen.'],
+    [9, '[Alasan] から、[Kalimat]', '時間が ありませんから、タクシーで 行きます。', '4. Menyatakan alasan (Karena..., maka...)', 'jikan ga arimasen kara, takushii de ikimasu.'],
+    [9, 'どうして [Kalimat] か', 'どうして 朝新聞を 読みませんか。', '5. Menanyakan alasan (Mengapa / Kenapa?)', 'doushite asa shinbun o yomimasen ka.'],
+    [9, '[Alasan] から', '「どうして 帰りますか。」「用事が ありますから。」', '6. Menjawab pertanyaan alasan (Karena...)', '"doushite kaerimasu ka." "youji ga arimasu kara."'],
 
     // BAB 10
-    [10, '[Tempat] に [Kata Benda] (benda mati) が あります', '部屋に 机が あります。', 'Di (tempat) ada (benda mati)', 'heya ni tsukue ga arimasu.', 'Di kamar ada meja.'],
-    [10, '[Tempat] に [Kata Benda] (makhluk hidup) が います', '庭に 犬が います。', 'Di (tempat) ada (makhluk hidup)', 'niwa ni inu ga imasu.', 'Di halaman ada anjing.'],
-    [10, '[Kata Benda 1] と [Kata Benda 2] の 間 (aida)', '本屋と 銀行の 間に あります。', 'Di antara KB1 dan KB2', "hon'ya to ginkou no aida ni arimasu.", 'Ada di antara toko buku dan bank.'],
+    [10, '[Tempat] に [KB Mati] が あります', '部屋に 机が あります。', '1. Keberadaan benda mati / tanaman (arimasu)', 'heya ni tsukue ga arimasu.'],
+    [10, '[Tempat] に [KB Hidup] が います', '庭に 犬が います。', '2. Keberadaan manusia / hewan (imasu)', 'niwa ni inu ga imasu.'],
+    [10, '[Tempat] に 何が ありますか／だれが いますか', '事務所に だれが いますか。', '3. Menanyakan keberadaan (Ada apa / siapa?)', 'jimusho ni dare ga imasu ka.'],
+    [10, '[KB] は [Tempat] に あります／います', '東京ディズニーランドは 千葉県に あります。', '4. Lokasi benda/orang spesifik (KB ada di...)', 'Toukyou Dizuniirando wa Chiba-ken ni arimasu.'],
+    [10, '[KB 1] の [Posisi] に [KB 2] が あります／います', '机の 上に 写真が あります。', '5. Penunjuk posisi relatif (ue/shita/mae/ushiro/naka/tonari)', 'tsukue no ue ni shashin ga arimasu.'],
+    [10, '[KB 1] と [KB 2] の 間 に [KB 3] が あります／います', '本屋と 銀行の 間に あります。', '6. Lokasi di antara dua benda (aida)', 'hon\'ya to ginkou no aida ni arimasu.'],
+    [10, '[KB 1] や [KB 2] など', '箱の 中に 手紙や 写真などが あります。', '7. Menyebutkan beberapa contoh benda (dan lain-lain)', 'hako no naka ni tegami ya shashin nado ga arimasu.'],
 
     // BAB 11
-    [11, '[Bilangan] / [Jumlah] + [Kata Kerja]', 'りんごを 4つ 買いました。', 'Jumlah/satuan diletakkan langsung sebelum kata kerja', 'ringo o yottsu kaimashita.', 'Saya membeli 4 buah apel.'],
-    [11, '[Periode] に X-kai [Kata Kerja]', '1か月に 2回 映画を 見ます。', 'Dalam (periode) melakukan KK sebanyak X kali', 'ikkagetsu ni ni-kai eiga o mimasu.', 'Dalam 1 bulan saya menonton film 2 kali.'],
+    [11, '[KB] を [Bilangan/Satuan] [Kata Kerja]', 'りんごを 4つ 買いました。', '1. Posisi bilangan/jumlah sebelum KK', 'ringo o yottsu kaimashita.'],
+    [11, '[Jumlah Orang] で [Kata Kerja]', '5人で 行きます。 / 1人で 行きます。', '2. Jumlah orang yang melakukan kegiatan', 'go-nin de ikimasu. / hitori de ikimasu.'],
+    [11, '[Periode Waktu] に [Frekuensi] [KK]', '1か月に 2回 映画を 見ます。', '3. Frekuensi dalam periode waktu', 'ikkagetsu ni ni-kai eiga o mimasu.'],
+    [11, '[KB / Jumlah] だけ', '休みは 日曜日だけです。', '4. Keterangan "Hanya / Saja" (dake)', 'yasumi wa nichiyoubi dake desu.'],
+    [11, '[Lama Waktu] かかります', 'うちから 会社まで 1時間半 かかります。', '5. Memakan waktu / durasi (kakarimasu)', 'uchi kara kaisha made ichi-jikan-han kakarimasu.'],
+    [11, 'どの くらい [Kata Kerja] か', 'どのくらい 日本語を 勉強しましたか。', '6. Menanyakan durasi/lama waktu (dono kurai)', 'dono kurai nihongo o benkyou shimashita ka.'],
 
     // BAB 12
-    [12, '[Kata Benda 1] は [Kata Benda 2] より [Kata Sifat] です', '日本は 台湾より 広いです。', 'KB1 lebih (kata sifat) daripada KB2', 'Nihon wa Taiwan yori hiroi desu.', 'Jepang lebih luas daripada Taiwan.'],
-    [12, '[Kata Benda 1] と [Kata Benda 2] と どちらが [Kata Sifat] ですか', 'サッカーと 野球と どちらが 面白いですか。', 'Antara KB1 dan KB2, mana yang lebih (kata sifat)?', 'sakkaa to yakyuu to dochira ga omoshiroi desu ka.', 'Antara sepak bola dan bisbol, mana yang lebih menarik?'],
-    [12, '[Kata Benda 1] [の 中] で どこ/だれ/なに が 一番 [Kata Sifat] ですか', '日本で どこが 一番 きれいですか。', 'Di antara KB1, mana/siapa/apa yang paling (kata sifat)?', 'Nihon de doko ga ichiban kirei desu ka.', 'Di Jepang tempat mana yang paling indah?'],
+    [12, '[KB / KS-na] でした／じゃ ありませんでした', 'きのうは 雨でした。 / 静かじゃ ありませんでした。', '1. Lampau KB & KS-na (deshita / ja arimasen deshita)', 'kinou wa ame deshita. / shizuka ja arimasen deshita.'],
+    [12, '[KS-i] 〜かったです／〜くなかったです', 'きのうは 暑かったです。 / 寒くなかったです。', '2. Lampau KS-i (~katta desu / ~kunakatta desu)', 'kinou wa atsukatta desu. / samukunakatta desu.'],
+    [12, '[KB 1] は [KB 2] より [KS] です', '日本は 台湾より 広いです。', '3. Perbandingan dua benda (KB1 lebih... daripada KB2)', 'Nihon wa Taiwan yori hiroi desu.'],
+    [12, '[KB 1] と [KB 2] と どちらが [KS] ですか', 'サッカーと 野球と どちらが 面白いですか。', '4. Menanyakan perbandingan 2 benda (Mana yang lebih...?)', 'sakkaa to yakyuu to dochira ga omoshiroi desu ka.'],
+    [12, '[Kategori] で [Kata Tanya] が 一番 [KS] ですか', '日本で どこが 一番 きれいですか。', '5. Superlatif / Paling... dalam kategori (ichiban)', 'Nihon de doko ga ichiban kirei desu ka.'],
 
     // BAB 13
-    [13, '[Kata Benda] が ほしいです', '車が ほしいです。', 'Ingin (memiliki) KB', 'kuruma ga hoshii desu.', 'Saya ingin (memiliki) mobil.'],
-    [13, '[Kata Kerja-stem] + たいです', '沖縄へ 行きたいです。', 'Ingin melakukan KK (kata kerja bentuk masu tanpa masu)', 'Okinawa e ikitai desu.', 'Saya ingin pergi ke Okinawa.'],
-    [13, '[Tempat] へ [Kata Kerja-stem] / [Kata Benda] に 行きます', 'デパートへ 買い物に 行きます。', 'Pergi ke (tempat) untuk tujuan KK/KB', 'depaato e kaimono ni ikimasu.', 'Saya pergi ke department store untuk berbelanja.'],
+    [13, '[Kata Benda] が ほしいです', '車が ほしいです。', '1. Ingin memiliki benda (hoshii desu)', 'kuruma ga hoshii desu.'],
+    [13, '[Kata Kerja-stem] たいです', '沖縄へ 行きたいです。', '2. Ingin melakukan kegiatan (KK-stem + tai desu)', 'Okinawa e ikitai desu.'],
+    [13, '[KK-stem] たくないです／たかったです', '何も 食べたくないです。', '3. Negatif / Lampau bentuk keinginan (~tai)', 'nani mo tabetakunai desu.'],
+    [13, '[Tempat] へ [KK-stem / KB] に 行きます', 'デパートへ 買い物に 行きます。', '4. Pergi/datang/pulang untuk suatu tujuan (ni ikimasu)', 'depaato e kaimono ni ikimasu.'],
+    [13, '何が ほしいですか／何を したいですか', '誕生日に 何が ほしいですか。', '5. Menanyakan keinginan benda/kegiatan', 'tanjoubi ni nani ga hoshii desu ka.'],
 
     // BAB 14
-    [14, '[Kata Kerja]-te ください', 'ちょっと 待ってください。', 'Tolong lakukan KK', 'chotto matte kudasai.', 'Tolong tunggu sebentar.'],
-    [14, '[Kata Kerja]-te います', '今 雨が 降っています。', 'Sedang melakukan KK (kegiatan berlangsung)', 'ima ame ga futte imasu.', 'Sekarang hujan sedang turun.'],
-    [14, '[Kata Kerja-stem] ましょうか', '傘を 貸しましょうか。', 'Menawarkan bantuan: "Bagaimana kalau saya...?"', 'kasa o kashimashou ka.', 'Bagaimana kalau saya pinjamkan payung?'],
+    [14, '[Kata Kerja-te] ください', 'ちょっと 待ってください。', '1. Permintaan halus (Tolong lakukan...)', 'chotto matte kudasai.'],
+    [14, '[Kata Kerja-te] います', '今 雨が 降っています。', '2. Sedang melakukan kegiatan (Sedang...)', 'ima ame ga futte imasu.'],
+    [14, '[Kata Kerja-stem] ましょうか', '傘を 貸しましょうか。', '3. Menawarkan bantuan (Bagaimana kalau saya...?)', 'kasa o kashimashou ka.'],
+    [14, '[Kata Benda] が [KK-te] います', 'タクシーが 止まっています。', '4. Keadaan/kejadian yang sedang berlangsung', 'takushii ga tomatte imasu.'],
+    [14, '[Kalimat 1] が、[Kalimat 2]', '失礼ですが、お名前は？', '5. Awalan halus sebelum meminta/bertanya (ga)', 'shitsurei desu ga, o-namae wa?'],
 
     // BAB 15
-    [15, '[Kata Kerja]-te も いいです [か]', 'ここで 写真を 撮っても いいですか。', 'Boleh melakukan KK / Boleh kah... ?', 'koko de shashin o tottemo ii desu ka.', 'Bolehkah mengambil foto di sini?'],
-    [15, '[Kata Kerja]-te は いけません', 'ここで たばこを 吸っては いけません。', 'Dilarang / tidak boleh melakukan KK', 'koko de tabako o suttewa ikemasen.', 'Dilarang merokok di sini.'],
-    [15, '[Kata Kerja]-te います (Status/Kebiasaan)', 'わたしは 結婚して います。 / IMCで 働いて います。', 'Status menikah / bekerja di / kebiasaan menetap', 'watashi wa kekkon shite imasu. / IMC de hataraite imasu.', 'Saya sudah menikah. / Saya bekerja di IMC.'],
+    [15, '[Kata Kerja-te] も いいですか', '写真を 撮っても いいですか。', '1. Meminta izin (Bolehkah...?)', 'shashin o tottemo ii desu ka.'],
+    [15, '[Kata Kerja-te] は いけません', 'ここで たばこを 吸っては いけません。', '2. Larangan (Dilarang / tidak boleh...)', 'koko de tabako o suttewa ikemasen.'],
+    [15, '[Kata Kerja-te] います (Status)', 'わたしは 結婚して います。 / 大阪に 住んで います。', '3. Status mapan/hasil aksi (Menikah/Tinggal di...)', 'watashi wa kekkon shite imasu. / Osaka ni sunde imasu.'],
+    [15, '[Kata Kerja-te] います (Pekerjaan/Aset)', 'IMCで 働いて います。 / 車を 持って います。', '4. Pekerjaan tetap / Kepemilikan benda (Bekerja di/Mempunyai)', 'IMC de hataraite imasu. / kuruma o motte imasu.'],
+    [15, 'お仕事は 何を して いますか', '「お仕事は 何を して いますか。」「先生です。」', '5. Menanyakan pekerjaan / profesi seseorang', '"o-shigoto wa nani o shite imasu ka." "sensei desu."'],
 
     // BAB 16
-    [16, '[Kata Kerja 1]-te, [Kata Kerja 2]-te, [Kata Kerja 3]', '朝 起きて、ごはんを 食べて、学校へ 行きます。', 'Urutan kegiatan: Melakukan KK1, lalu KK2, lalu KK3', 'asa okite, gohan o tabete, gakkou e ikimasu.', 'Pagi bangun tidur, makan nasi, lalu pergi ke sekolah.'],
-    [16, '[Kata Kerja 1]-te kara, [Kata Kerja 2]', '仕事が 終わってから、ごはんを 食べます。', 'Setelah selesai melakukan KK1, baru melakukan KK2', 'shigoto ga owattekara, gohan o tabemasu.', 'Setelah pekerjaan selesai, baru makan.'],
-    [16, '[Kata Benda 1] wa [Kata Benda 2] ga [Kata Sifat] desu', 'ミラーさんは 髪が 短いです。', 'KB1 (subjek) bagian KB2-nya (kata sifat)', 'Miraa-san wa kami ga mijikai desu.', 'Sdr. Miller rambutnya pendek.'],
-    [16, '[Kata Kerja-Kamus] + ことが できます', '日本語を 話す ことが できます。', 'Bisa / mampu melakukan KK', 'nihongo o hanasu koto ga dekimasu.', 'Bisa berbicara bahasa Jepang.']
+    // BAB 16
+    [16, '[KK1-te], [KK2-te], [KK3]', '食べて、読んで、行きます。', '1. Urutan kegiatan berurutan (KK-te, KK-te, KK)', 'tabete, yonde, ikimasu.'],
+    [16, '[KK 1-te] から、[KK 2]', '仕事が 終わってから、泳ぎます。', '2. Setelah melakukan suatu aksi (te kara)', 'shigoto ga owatte kara, oyogimasu.'],
+    [16, '[KS-i]-kute / [KS-na / KB] de', '東京は 広くて、賑やかです。', '3. Menghubungkan sifat/kata benda (dan...)', 'Toukyou wa hirokute, nigiyaka desu.'],
+    [16, '[KB 1] は [KB 2 (Bagian Tubuh)] が [KS]', 'マリアさんは 髪が 長いです。', '4. Menerangkan ciri fisik/bagian tubuh', 'Maria-san wa kami ga nagai desu.'],
+    [16, '[Tempat] kara [KB] o oroshimasu', '銀行から お金を おろします。', '5. Mengambil/mengeluarkan barang dari tempat', 'ginkou kara o-kane o oroshimasu.'],
+    // BAB 16
+    [16, '[KK1-te], [KK2-te], [KK3]', '食べて、読んで、行きます。', '1. Urutan kegiatan berurutan (KK-te, KK-te, KK)', 'tabete, yonde, ikimasu.'],
+    [16, '[KK 1-te] から、[KK 2]', '仕事が 終わってから、泳ぎます。', '2. Setelah melakukan suatu aksi (te kara)', 'shigoto ga owatte kara, oyogimasu.'],
+    [16, '[KS-i]-kute / [KS-na / KB] de', '東京は 広くて、賑やかです。', '3. Menghubungkan sifat/kata benda (dan...)', 'Toukyou wa hirokute, nigiyaka desu.'],
+    [16, '[KB 1] は [KB 2 (Bagian Tubuh)] が [KS]', 'マリアさんは 髪が 長いです。', '4. Menerangkan ciri fisik/bagian tubuh', 'Maria-san wa kami ga nagai desu.'],
+    [16, '[Tempat] kara [KB] o oroshimasu', '銀行から お金を おろします。', '5. Mengambil/mengeluarkan barang dari tempat', 'ginkou kara o-kane o oroshimasu.'],
+
   ];
 
   var tabKelola = document.getElementById('tab-kelola');
